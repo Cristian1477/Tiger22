@@ -1,4 +1,4 @@
-package sampleCode.Constructor.MarioKart;
+package Constructor.MarioKart;
 
 public class MarioKartGame {
     // Which race track will be used?

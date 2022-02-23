@@ -1,4 +1,4 @@
-//package sampleCode.Cumulative.ProcessingNumbersArrayList;
+package Cumulative;
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -20,6 +20,8 @@ public class ProcessingNumbersArrayList {
         ArrayList <Integer> addNumbers = new ArrayList<Integer>();
 
         sumAll(totalNumbers, addNumbers);
+        minMax(addNumbers);
+        sumEven(totalNumbers, addNumbers);
         //minMax(addNumbers);
         //sumEven(totalNumbers, addNumbers);
         //largestOdd(totalNumbers, addNumbers);
@@ -43,18 +45,41 @@ public class ProcessingNumbersArrayList {
     }
 
     //Write minMax Method
+    public static void minMax(ArrayList<Integer> nums){
+        Collections.sort(nums);
+       // System.out.println(nums);
+        int x = nums.get(0);
+        int y = nums.get(nums.size()-1);
+        System.out.println(x + ", " + y);
+    }
 
   
 
 
 
     //Write sumEven Method
+    public static void sumEven(int totalNumbers, ArrayList<Integer> nums){
+        int var = 0;
+        for(int i = 0; i < nums.size(); i++){
+            if(nums.get(i)%2==0){
+                 var += nums.get(i);
+            }
+        }
+        System.out.println("The sum of all even integers entered is " + var);
+    }
 
     
 
 
 
     //Write largestOdd Method
+    public static void largestOdd(int totalNumbers, ArrayList<Integer> nums){
+        for (int i = 0; i < nums.size(); i++){
+            if(nums.get(i)%2==1){
+
+            }
+        }
+    }
 
 
 

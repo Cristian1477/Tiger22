@@ -2,6 +2,8 @@
     "java.project.sourcePaths": [
         "studentWork/Wordle",
         "studentWork/DrawBoxes",
-        "studentWork/Cristian1477"
+        "studentWork/Cristian1477",
+        "sampleCode/Point",
+        "sampleCode"
     ]
 }

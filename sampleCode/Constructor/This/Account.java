@@ -1,4 +1,4 @@
-package sampleCode.Constructor.This;
+package Constructor.This;
 
 public class Account {
 
