@@ -1,4 +1,4 @@
-// package sampleCode.EncapsulatedBankAccount;
+package EncapsulatedBankAccount;
 
 
 public class BankAccountClient {

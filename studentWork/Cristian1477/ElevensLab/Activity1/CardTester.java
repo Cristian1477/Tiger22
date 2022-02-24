@@ -1,4 +1,4 @@
-// package sampleCode.ElevensLab.Activity1;
+package ElevensLab.Activity1;
 
 /**
  * This is a class that tests the Card class.

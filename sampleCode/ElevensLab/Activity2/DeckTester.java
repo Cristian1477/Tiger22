@@ -1,6 +1,7 @@
-/**
- * This is a class that tests the Deck class.
- */
+package ElevensLab.Activity2;
+
+ //* This is a class that tests the Deck class.
+ //*/
 public class DeckTester {
 
 	/**

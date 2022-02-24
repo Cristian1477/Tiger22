@@ -1,4 +1,4 @@
-// package sampleCode.ElevensLab.Activity1;
+package ElevensLab.Activity1;
 
 
 /**
@@ -29,6 +29,7 @@ public class Card {
 	 */
 	public void setSuit(String s) {
 	 /* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+	 suit =  s;
 	}
 
 	/**
@@ -37,6 +38,7 @@ public class Card {
 	 */
 	public void setRank(String r) {
 	 /* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+	 rank = r;
 	}
 
 	/**
@@ -45,6 +47,7 @@ public class Card {
 	 */
 	public void setPointValue(int pv) {
 	 /* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+	 pointValue = pv;
 	}
 
 	/**
@@ -53,6 +56,7 @@ public class Card {
 	 */
 	public String getSuit() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+		return suit;
 	}
 
 	/**
@@ -61,6 +65,7 @@ public class Card {
 	 */
 	public String getRank() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+		return rank;
 	}
 
 	/**
@@ -69,6 +74,7 @@ public class Card {
 	 */
 	public int getPointValue() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+		return pointValue;
 	}
 
 	/** Compare this card with the argument.
@@ -79,6 +85,12 @@ public class Card {
 	 */
 	public boolean matches(Card otherCard) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+		if(rank.equals(otherCard.rank) && suit.equals(otherCard.suit)&& pointValue == otherCard.pointValue){
+			return true;
+		}
+		else{
+			return false;
+		}
 	}
 
 	/**
@@ -94,5 +106,7 @@ public class Card {
 	@Override
 	public String toString() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+		String toString ="[" + rank.toString() + "] of [" + suit.toString() + "] (point value = [" + pointValue + "] )";
+		return toString;
 	}
 }

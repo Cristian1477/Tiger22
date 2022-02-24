@@ -1,4 +1,4 @@
-// package sampleCode.ElevensLab.Activity1;
+package ElevensLab.Activity1;
 
 
 /**

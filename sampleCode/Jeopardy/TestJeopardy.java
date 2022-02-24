@@ -1,4 +1,4 @@
-package sampleCode.Jeopardy;
+package Jeopardy;
 
 import java.util.*;
 
