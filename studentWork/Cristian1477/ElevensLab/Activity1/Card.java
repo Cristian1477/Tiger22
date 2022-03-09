@@ -1,6 +1,5 @@
 package ElevensLab.Activity1;
 
-
 /**
  * Card.java
  *
@@ -23,39 +22,30 @@ public class Card {
 	 */
 	private int pointValue;
 
-	/**
-	 * Sets this <code>Card's</code> suit.
-	 * @param s the new suit 
+
+   /**
+	 * Creates a new <code>Card</code> instance.
+	 *
+	 * @param cardRank  a <code>String</code> value
+	 *                  containing the rank of the card
+	 * @param cardSuit  a <code>String</code> value
+	 *                  containing the suit of the card
+	 * @param cardPointValue an <code>int</code> value
+	 *                  containing the point value of the card
 	 */
-	public void setSuit(String s) {
-	 /* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
-	 suit =  s;
+	public Card(String cardRank, String cardSuit, int cardPointValue) {
+		//initializes a new Card with the given rank, suit, and point value
+		rank = cardRank;
+		suit = cardSuit;
+		pointValue = cardPointValue;
 	}
 
-	/**
-	 * Sets this <code>Card's</code> rank.
-	 * @param r the new rank 
-	 */
-	public void setRank(String r) {
-	 /* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
-	 rank = r;
-	}
-
-	/**
-	 * Sets this <code>Card's</code> point value.
-	 * @param pv the new point value
-	 */
-	public void setPointValue(int pv) {
-	 /* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
-	 pointValue = pv;
-	}
 
 	/**
 	 * Accesses this <code>Card's</code> suit.
 	 * @return this <code>Card's</code> suit.
 	 */
-	public String getSuit() {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+	public String suit() {
 		return suit;
 	}
 
@@ -63,17 +53,15 @@ public class Card {
 	 * Accesses this <code>Card's</code> rank.
 	 * @return this <code>Card's</code> rank.
 	 */
-	public String getRank() {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+	public String rank() {
 		return rank;
 	}
 
-	/**
+   /**
 	 * Accesses this <code>Card's</code> point value.
 	 * @return this <code>Card's</code> point value.
 	 */
-	public int getPointValue() {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+	public int pointValue() {
 		return pointValue;
 	}
 
@@ -84,13 +72,9 @@ public class Card {
 	 *         false otherwise.
 	 */
 	public boolean matches(Card otherCard) {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
-		if(rank.equals(otherCard.rank) && suit.equals(otherCard.suit)&& pointValue == otherCard.pointValue){
-			return true;
-		}
-		else{
-			return false;
-		}
+		return otherCard.suit().equals(this.suit())
+			&& otherCard.rank().equals(this.rank())
+			&& otherCard.pointValue() == this.pointValue();
 	}
 
 	/**
@@ -105,8 +89,6 @@ public class Card {
 	 */
 	@Override
 	public String toString() {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
-		String toString ="[" + rank.toString() + "] of [" + suit.toString() + "] (point value = [" + pointValue + "] )";
-		return toString;
+		return rank + " of " + suit + " (point value = " + pointValue + ")";
 	}
 }
