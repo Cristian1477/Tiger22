@@ -1,8 +1,9 @@
-public class Salad implements MenuItem {
+package Trio;
+public class Drink implements MenuItem {
     private String name;
     private double price;
 
-    public Salad(String name, double price) {
+    public Drink(String name, double price) {
         this.name = name;
         this.price = price;
     }

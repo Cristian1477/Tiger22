@@ -1,3 +1,4 @@
+package Trio;
 public class TrioClient {
     
     public static void main(String[] args) {

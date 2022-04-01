@@ -1,3 +1,4 @@
+package Trio;
 public interface MenuItem {
     String getName();
 
