@@ -6,7 +6,7 @@ public class Person {
    int age;
    String[] pets;
    String gender;
-   // TODO (step 3): add another field to the Person class here.
+   
    
    
    public void printIntroduction() {
@@ -29,6 +29,5 @@ public class Person {
       System.out.println("I am a " + gender);
    }
    
-   // TODO (step 4): add another method which prints something related to the field you added in step 1
    
 }

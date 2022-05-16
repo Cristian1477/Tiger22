@@ -1,3 +1,4 @@
+package Critter;
 // DO NOT MAKE EDITS TO THIS CLASS
 
 // Class CritterModel keeps track of the state of the critter simulation.

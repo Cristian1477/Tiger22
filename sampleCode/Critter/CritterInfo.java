@@ -1,3 +1,4 @@
+package Critter;
 // DO NOT MAKE EDITS TO THIS FILE
 
 // The CritterInfo interface defines a set of methods for querying the
